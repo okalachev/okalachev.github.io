@@ -1,0 +1,13 @@
+[Unit]
+Description=chev.me drawing service
+After=redis-server.service
+
+[Service]
+ExecStart=/home/oleg/chev/draw/app.js
+Environment=NODE_ENV=production
+
+User=oleg
+Group=oleg
+
+Restart=on-failure
+RestartSec=20s

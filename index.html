@@ -2,42 +2,31 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<style>
-			body {
-				line-height: 2em;
-				color: rgba(0,0,0,.8);
-				width: 400px;
-				margin: 20px auto;
-			}
-			ul {
-				padding: 0;
-			}
-			li {
-				list-style: none;
-			}
-			a {
-				/*color: rgba(0,0,0,.8);*/
-			}
-			footer {
-				text-align: right;
-			}
-		</style>
+		<link rel="stylesheet" href="main.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reconnecting-websocket/1.0.0/reconnecting-websocket.js"></script>
 		<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter37286925 = new Ya.Metrika({ id:37286925, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/37286925" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 	</head>
 	<body>
-		<img src="hello.png" width="400" alt="hello.">
-		<ul>
-			<li><a href="https://vk.com/okalachev">ВК</a></li>
-			<li><a href="https://github.com/okalachev">github</a></li>
-			<li><a href="http://mquiz.ru">mquiz.ru</a></li>
-			<li><a href="https://vk.com/allstations">ВСЕСТАНЦИИ</a></li>
-			<li><a href="https://vk.com/club770007">Марсоход Один</a></li>
-			<li><a href="http://da-ili-net.ru">Да или Нет</a></li>
-			<li><a href="http://chev.me/arucogen/">ArUco markers generator</a></li>
-			<li><a href="https://telegram.me/nikitatherobot">@nikitatherobot</a></li>
-		</ul>
-		<footer>
-			<a href="mailto:okalachev@gmail.com">Напиши</a> мне письмо &mdash; okalachev@gmail.com.
-		</footer>
+		<div class="canvas-container">
+			<canvas></canvas>
+		</div>
+		<div class="block">
+			<ul>
+				<li><a href="https://vk.com/okalachev">ВК</a></li>
+				<li><a href="https://github.com/okalachev">GitHub</a></li>
+				<li><a href="https://www.facebook.com/okalachev">FB</a></li>
+				<li><a href="https://vk.com/allstations">ВСЕСТАНЦИИ</a></li>
+				<li><a href="http://chev.me/arucogen/">ArUco markers generator</a></li>
+				<li><a href="http://da-ili-net.ru">Да или Нет</a></li>
+				<li><a href="https://clever.copterexpress.com">Клевер</a></li>
+				<li><a href="http://mquiz.ru">mquiz.ru</a></li>
+				<li><a href="https://vk.com/club770007">Марсоход Один</a></li>
+			</ul>
+			<footer>
+				<a href="mailto:okalachev@gmail.com">Напиши</a> мне письмо &mdash; okalachev@gmail.com.
+			</footer>
+		</div>
+		<a class="github" href="https://github.com/okalachev/okalachev.github.io">Source code</a>
+		<script type="text/javascript" src="main.js"></script>
 	</body>
 </html>

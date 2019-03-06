@@ -1,0 +1,19 @@
+{
+  "name": "draw",
+  "version": "0.0.1",
+  "main": "app.js",
+  "dependencies": {
+    "ajv": "^6.10.0",
+    "redis": "^2.8.0",
+    "ws": "^6.1.2"
+  },
+  "devDependencies": {
+    "mocha": "^6.0.2",
+    "should": "^13.2.3"
+  },
+  "scripts": {
+    "start": "node app",
+    "test": "node_modules/.bin/mocha"
+  },
+  "license": "MIT"
+}
