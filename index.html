@@ -26,7 +26,7 @@
 				<li><a href="https://www.youtube.com/channel/UCdAhwbPlazT5scWtztDLLug">YouTube</a></li>
 				<li><a href="https://t.me/okalachev">Telegram</a></li>
 				<li><a href="http://mquiz.ru">mquiz.ru</a></li>
-				<li><a href="https://www.chess.com/member/okalachev">chess.com</a></li>
+				<li class=chess><a href="https://www.chess.com/member/okalachev">chess.com</a></li>
 				<li><a href="https://vk.com/club770007">Марсоход Один</a></li>
 			</ul>
 			<footer>
@@ -34,6 +34,12 @@
 			</footer>
 		</div>
 		<a class="github" href="https://github.com/okalachev/okalachev.github.io">Source code</a>
+		<script>
+			fetch('https://api.chess.com/pub/player/okalachev/stats').then((response) => response.json())
+				.then((data) => {
+					document.querySelector('li.chess').innerHTML += ' <span class=meta>blitz ' + data.chess_blitz.last.rating + '</span>';
+				});
+		</script>
 		<!-- <script type="text/javascript" src="main.js"></script> -->
 	</body>
 </html>
